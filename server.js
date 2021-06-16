@@ -23,8 +23,8 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.get('/register', (req,res)=>{
-    res.send(db.users);
+app.get('/', (req,res)=>{
+    res.send(`it is workinggggg!`);
 })
 
 app.post('/signin', (req, res) => { signin(req, res, db, bcrypt) })
