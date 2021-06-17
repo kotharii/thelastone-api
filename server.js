@@ -12,10 +12,8 @@ import image from './controllers/image.js';
 const db = knex({
     client: 'pg',
     connection: {
-        host: 'postgresql-amorphous-98838',
-        user: 'postgres',
-        password: 'kothari',
-        database: 'thelastone'
+        host: process.env.DATABASE_URL,
+        ssl: true,
     }
 });
 
