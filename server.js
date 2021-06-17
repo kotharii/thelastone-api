@@ -62,7 +62,7 @@ app.listen(process.env.PORT || 3000 , ()=>{
     console.log('working😉');
     console.log(`app is running on port  ${ process.env.PORT }`);
 });
-socket = io.listen(process.env.PORT);
+
 
 
 /* 
