@@ -21,9 +21,7 @@ const app = express();
 app.use(express.json());
 app.use(cors());
 
-app.get('/', (req,res)=>{
-    res.send(`it is workinggggg!`);
-})
+app.get('/', (req, res)=> { res.send(`it is workinggggg broooo!`)})
 
 app.post('/signin', (req, res) => { signin(req, res, db, bcrypt) })
 
