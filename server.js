@@ -12,8 +12,12 @@ import image from './controllers/image.js';
 const db = knex({
     client: 'pg',
     connection: {
-        connectionString: process.env.DATABASE_URL,
-        ssl: true,
+        host : 'postgresql-octagonal-40573',
+        user : 'postgres',
+        password : 'kothari',
+        database : 'thelastone-api'
+        // connectionString: process.env.DATABASE_URL,
+        // ssl: true,
     }
 });
 
